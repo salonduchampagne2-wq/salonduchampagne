@@ -1,59 +1,64 @@
 <html lang="uk">
-<label>Ім'я
-<input type="text" name="Ім'я" placeholder="Ваше ім'я" required />
-</label>
-<label>Контакт (телефон або email)
-<input type="text" name="Контакт" placeholder="Телефон або email" required />
-</label>
-<label>Дата і час
-<input type="datetime-local" name="Дата" />
-</label>
-<label>Кількість гостей
-<input type="number" name="Гості" min="1" placeholder="2" />
-</label>
-<label>Повідомлення
-<textarea name="Повідомлення" placeholder="Додаткові побажання"></textarea>
-</label>
-<button type="submit" class="btn primary">Надіслати запит</button>
-</form>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Бронювання — Salon du Champagne</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-reservation">
+  <header class="site-header">
+    <nav>
+      <div class="nav-inner container">
+        <div class="brand">
+          <a href="/"><img src="assets/logo.png" alt="Salon du Champagne" /></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Головна</a></li>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="story.html">Наша історія</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
+  <main>
+    <section class="section reservation center">
+      <div class="container">
+        <h2>Забронюйте Ваш вечір</h2>
+        <p class="muted">Ми запрошуємо вас провести вечір у межах вишуканості та затишку. Заповніть форму — і ми підтвердимо бронь найближчим часом.</p>
 
-<div class="contact-info">
-<p><strong>Контакт по телефону:</strong></p>
-<p class="muted">Номер телефону в Instagram</p>
-<a class="btn ghost" href="https://www.instagram.com/salonduchampagne/" target="_blank">Переглянути номер у Instagram</a>
+        <form class="booking-form" action="mailto:salonduchampagne2@gmail.com" method="post" enctype="text/plain">
+          <input type="text" name="Ім'я" placeholder="Ваше ім'я" required />
+          <input type="text" name="Контакт" placeholder="Телефон або email" required />
+          <input type="datetime-local" name="Дата" />
+          <input type="number" name="Гості" min="1" placeholder="Кількість гостей" />
+          <textarea name="Повідомлення" rows="4" placeholder="Додаткові побажання"></textarea>
+          <button type="submit">Надіслати запит</button>
+        </form>
 
+        <div style="margin-top:18px; text-align:center;">
+          <a class="btn ghost" href="https://www.instagram.com/salonduchampagne/" target="_blank">Показати номер у Instagram</a>
+        </div>
 
-<p style="margin-top:1rem"><strong>Електронна пошта</strong></p>
-<p class="muted">salonduchampagne2@gmail.com</p>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>© <span id="year4"></span> Salon du Champagne. Усі права захищені.</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.instagram.com/salonduchampagne/" class="insta-link" target="_blank" rel="noopener">
+          <img src="assets/instagram.png" alt="Instagram" />
+        </a>
+        <p class="muted">Дизайн та розробка: Qusai</p>
+      </div>
+    </div>
+  </footer>
 
-<p style="margin-top:1rem"><strong>Телеграм</strong></p>
-<a class="btn" href="https://t.me/SalonDuChampagne" target="_blank">Написати в Telegram</a>
-</div>
-</div>
-
-
-</div>
-</section>
-</main>
-
-
-<footer class="site-footer">
-<div class="container footer-inner">
-<div class="footer-left">
-<p>© <span id="year4"></span> Salon du Champagne. Усі права захищені.</p>
-</div>
-<div class="footer-right">
-<a href="https://www.instagram.com/salonduchampagne/" class="insta-link" target="_blank" rel="noopener">
-<img src="assets/instagram.jpg" alt="Instagram" />
-</a>
-<p class="muted">Дизайн та розробка: Qusai</p>
-</div>
-</div>
-</footer>
-
-
-<script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
 </body>
 </html>
