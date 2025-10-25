@@ -1,5 +1,3 @@
-<!-- index.html -->
-<!doctype html>
 <html lang="uk">
 <head>
 <meta charset="utf-8" />
@@ -7,21 +5,21 @@
 <title>Salon du Champagne — Головна</title>
 <link rel="stylesheet" href="style.css" />
 <link rel="icon" href="assets/favicon.png" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="site-header">
 <div class="container header-inner">
 <a class="logo" href="/">
-<img src="assets/salonduchampagne.jpg" alt="Salon du Champagne logo" />
+<img src="assets/logo.png" alt="Salon du Champagne logo" />
 </a>
 <button class="nav-toggle" id="navToggle" aria-label="Відкрити меню">☰</button>
 <nav class="nav" id="siteNav">
 <ul>
-<li><a href="#about">Про нас</a></li>
-<li><a href="#menu">Меню</a></li>
-<li><a href="#locations">Заклади</a></li>
-<li><a href="#gallery">Галерея</a></li>
-<li><a href="#contact">Бронювання</a></li>
+<li><a href="/">Головна</a></li>
+<li><a href="menu.html">Меню</a></li>
+<li><a href="reservation.html">Бронювання</a></li>
+<li><a href="story.html">Наша історія</a></li>
 </ul>
 </nav>
 </div>
@@ -29,34 +27,49 @@
 
 
 <main>
-<section class="hero" style="background-image: url('assets/pic1.jpg')">
+<!-- Hero with auto slideshow (pic1, pic2, pic3) -->
+<section class="hero">
+<div class="slideshow" id="slideshow" aria-hidden="false">
+<div class="slide" style="background-image: url('assets/pic1.jpg')"></div>
+<div class="slide" style="background-image: url('assets/pic2.jpg')"></div>
+<div class="slide" style="background-image: url('assets/pic3.jpg')"></div>
+</div>
+<div class="hero-overlay">
 <div class="container hero-inner">
 <h1>Salon du Champagne</h1>
-<p class="lead">Делікатний простір шампанського, атмосфера і смак, які пам'ятаються</p>
+<p class="lead">Champagne, елегантність і незабутня атмосфера</p>
 <div class="hero-cta">
-<a class="btn primary" href="#contact">Забронювати столик</a>
-<a class="btn ghost" href="#menu">Переглянути меню</a>
-</div>
-</div>
-</section>
-
-
-<section id="about" class="section about">
-<div class="container">
-<div class="grid-2">
-<div>
-<h2>Наша історія</h2>
-<p>Salon du Champagne продовжує спадок родини, яка створила свою власну філософію шампанського. Кожна пляшка, кожен келих і кожна зустріч тут — це історія про майстерність та здійснену мрію.</p>
-<p class="muted">Ми працюємо з локальними постачальниками, дбайливо підбираємо асортимент і створюємо атмосферу для будь-якого свята.</p>
-</div>
-<div class="about-img">
-<img src="assets/about.jpg" alt="Інтер'єр салону" />
+<a class="btn primary" href="reservation.html">Забронювати столик</a>
+<a class="btn ghost" href="menu.html">Переглянути меню</a>
 </div>
 </div>
 </div>
 </section>
 
 
-<section id="menu" class="section menu">
+<!-- Intro / About like Girl & The Goat -->
+<section class="section intro">
 <div class="container">
+<div class="intro-grid">
+<div class="intro-text">
+<h2>Ласкаво просимо до Salon du Champagne</h2>
+<p>Місце, де кожен келих шампанського — це переживання. Ми поєднуємо дбайливо підібрані вина, авторські закуски та атмосферу для важливих моментів життя.</p>
+<p class="muted">Ми працюємо з кращими постачальниками та створюємо вечори, які запам'ятаються.</p>
+</div>
+<div class="intro-image">
+<img src="assets/pic1.jpg" alt="Інтер'єр Salon du Champagne" />
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Experience / highlight section -->
+<section class="section experience">
+<div class="container">
+<div class="experience-grid">
+<div class="exp-card">
+<h3>Експертний підбір шампанського</h3>
+<p>Наш сомельє обирає вина, що підкреслюють будь-який настрій — від тихої зустрічі до великого свята.</p>
+</div>
 </html>
