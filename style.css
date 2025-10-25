@@ -248,7 +248,51 @@ header nav ul.nav-links a.active {
     visibility: hidden;
     transition: opacity 0.3s;
     z-index: 1001;
+}.gallery-preview {
+    padding: 60px 20px;
+    background-color: #fffaf3;
 }
+
+.gallery-preview h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #bfa16f;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.gallery-preview .link {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #bfa16f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.gallery-preview .link:hover {
+    color: #a6864f;
+}
+
 
 .modal.active {
     opacity: 1;
