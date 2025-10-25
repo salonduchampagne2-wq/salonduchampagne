@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang="uk">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Salon du Champagne</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="page-home">
+<body>
 
   <!-- Header -->
-  <header class="site-header">
+  <header>
     <nav>
-      <div class="nav-inner container">
+      <div class="nav-inner">
         <div class="brand">
-          <a href="/"><img src="assets/logo.png" alt="Salon du Champagne" /></a>
+          <a href="index.html"><img src="assets/logo.png" alt="Salon du Champagne"></a>
         </div>
         <ul class="nav-links">
           <li><a href="index.html" class="active">Головна</a></li>
@@ -28,68 +28,56 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <img src="assets/hero1.jpg" alt="Salon du Champagne Hero" class="active" />
-    <h1>Ласкаво просимо до Salon du Champagne</h1>
-    <p>Вишуканий смак, елегантна атмосфера, незабутні миті.</p>
+    <img src="assets/hero.jpg" alt="Salon du Champagne">
+    <h1>Вітання у Salon du Champagne</h1>
+    <p>Розкіш, смак та елегантність у кожній миті</p>
   </section>
 
-  <!-- Home Buttons / Links to Sections -->
-  <section class="home-buttons">
+  <!-- Homepage Buttons -->
+  <div class="home-buttons">
     <a href="menu.html">
-      <img src="assets/home-menu.jpg" alt="Меню" />
+      <img src="assets/menu-preview.jpg" alt="Переглянути Меню">
       <span>Меню</span>
     </a>
     <a href="reservation.html">
-      <img src="assets/home-reservation.jpg" alt="Бронювання" />
+      <img src="assets/reservation-preview.jpg" alt="Забронювати столик">
       <span>Бронювання</span>
     </a>
     <a href="story.html">
-      <img src="assets/home-story.jpg" alt="Наша історія" />
-      <span>Наша історія</span>
+      <img src="assets/story-preview.jpg" alt="Наша Історія">
+      <span>Наша Історія</span>
     </a>
-  </section>
-<!-- Gallery Section -->
-<section class="section gallery-preview">
-  <div class="container">
-    <h2 class="center">Галерея</h2>
-    <div class="gallery-grid">
-      <img src="assets/gallery1.jpg" alt="Галерея 1" />
-      <img src="assets/gallery2.jpg" alt="Галерея 2" />
-      <img src="assets/gallery3.jpg" alt="Галерея 3" />
-      <img src="assets/gallery4.jpg" alt="Галерея 4" />
-      <img src="assets/gallery5.jpg" alt="Галерея 5" />
-      <img src="assets/gallery6.jpg" alt="Галерея 6" />
-    </div>
-    <p class="center"><a class="link" href="https://www.instagram.com/salonduchampagne/">Перегляньте наш Instagram</a></p>
   </div>
-</section>
+
+  <!-- Gallery Section -->
+  <section class="section gallery-preview">
+    <div class="container">
+      <h2 class="center">Галерея</h2>
+      <div class="gallery-grid">
+        <img src="assets/gallery1.jpg" alt="Галерея 1">
+        <img src="assets/gallery2.jpg" alt="Галерея 2">
+        <img src="assets/gallery3.jpg" alt="Галерея 3">
+        <img src="assets/gallery4.jpg" alt="Галерея 4">
+        <img src="assets/gallery5.jpg" alt="Галерея 5">
+        <img src="assets/gallery6.jpg" alt="Галерея 6">
+      </div>
+      <p class="center"><a class="link" href="https://www.instagram.com/salonduchampagne/" target="_blank">Перегляньте наш Instagram</a></p>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
+  <footer>
     <div class="container footer-inner">
-      <div class="footer-left">
-        <p>© <span id="year"></span> Salon du Champagne. Усі права захищені.</p>
-      </div>
-      <div class="footer-right">
-        <a href="https://www.instagram.com/salonduchampagne/" class="insta-link" target="_blank" rel="noopener">
-          <img src="assets/instagram.png" alt="Instagram" />
-        </a>
-      </div>
+      <p>© <span id="year"></span> Salon du Champagne. Усі права захищені.</p>
+      <a href="https://www.instagram.com/salonduchampagne/" target="_blank">
+        <img src="assets/instagram.png" alt="Instagram">
+      </a>
+      <p>Дизайн та розробка: Qusai</p>
     </div>
   </footer>
 
   <script>
-    // Update footer year
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Optional: Hero image fade (if multiple hero images are planned)
-    const heroImages = document.querySelectorAll('.hero img');
-    let currentHero = 0;
-    setInterval(() => {
-      heroImages[currentHero].classList.remove('active');
-      currentHero = (currentHero + 1) % heroImages.length;
-      heroImages[currentHero].classList.add('active');
-    }, 5000);
   </script>
 
 </body>
