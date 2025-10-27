@@ -13,46 +13,60 @@
   <!-- Header -->
   <header>
     <nav>
-      <a href="index.html">Головна</a>
-      <a href="menu.html">Меню</a>
-      <a href="reservation.html">Резервація</a>
-      <a href="story.html" class="active">Наша історія</a>
+      <div class="nav-inner">
+        <div class="brand">
+          <a href="index.html">
+            <img src="assets/favicon.png" alt="Salon du Champagne logo">
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="reservation.html">Резервація</a></li>
+          <li><a href="story.html" class="active">Наша історія</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <!-- Hero -->
-  <section class="hero hero-story">
+  <section class="hero">
     <img src="assets/pic8.jpg" alt="Історія ресторану">
-    <div class="hero-overlay">
-      <h1>Наша історія</h1>
-    </div>
+    <h1>Наша історія</h1>
   </section>
 
-  <!-- Story Images -->
-  <section class="story-gallery">
-    <div class="story-img">
+  <!-- Story Title -->
+  <section class="story-title">
+    <h1>Про нас</h1>
+    <div class="underline"></div>
+  </section>
+
+  <!-- Story Images (same size as homepage buttons) -->
+  <section class="home-buttons">
+    <a>
       <img src="assets/pic6.jpg" alt="Натхнення">
-      <div class="overlay-text">Натхнення</div>
-    </div>
-    <div class="story-img">
+      <span>Натхнення</span>
+    </a>
+    <a>
       <img src="assets/pic7.jpg" alt="Атмосфера">
-      <div class="overlay-text">Атмосфера</div>
-    </div>
+      <span>Атмосфера</span>
+    </a>
+    <a>
+      <img src="assets/pic2.jpg" alt="Момент">
+      <span>Момент</span>
+    </a>
   </section>
 
   <!-- Story Text -->
-  <section class="story-content">
-    <div class="container">
-      <p>
-        Salon du Champagne — це не просто ресторан, це атмосфера, створена для моментів, які хочеться запам’ятати. 
-        Все почалося з любові до шампанського і бажання поділитися мистецтвом насолоди. 
-        Ми зібрали команду шефів, сомельє та дизайнерів, щоб створити місце, де кожна деталь говорить про витонченість і комфорт.
-      </p>
-      <p>
-        Тут час уповільнюється, а розмова ллється так само плавно, як і шампанське у келиху. 
-        Ми віримо, що справжня розкіш — це не в блиску, а в щирості моментів, які залишаються з вами.
-      </p>
-    </div>
+  <section class="story-text">
+    <p>
+      У самому серці міста народився Salon du Champagne — місце, де шампанське перетворюється на емоцію. 
+      Наш простір створений для тих, хто цінує витонченість, легкість і момент, коли все навколо зупиняється.
+    </p>
+    <p>
+      Кожен елемент інтер’єру, аромат у повітрі та звук келиха — це частина історії, яку ми створюємо разом із вами. 
+      Ми прагнемо, щоб кожен візит до нас був як перший ковток улюбленого шампанського — незабутній, яскравий і щирий.
+    </p>
   </section>
 
   <!-- Footer -->
@@ -63,6 +77,7 @@
     <p>&copy; <span id="year"></span> Salon du Champagne. Всі права захищені.</p>
   </footer>
 
+  <!-- Footer Year Script -->
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
